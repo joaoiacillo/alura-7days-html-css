@@ -13,6 +13,8 @@ o utilizar com os devidos créditos. Para saber mais, [clique aqui](LICENSE).
 
 ### (19/04/2023)
 
+**Tempo total:** aproximadamente 1h50min (15:14 → 17:07)
+
 #### Commits
 
 - ✨ Implement Header ([0b0badc](https://github.com/joaoiacillo/alura-7days-html-css/commit/0b0badcfe02c08d22ad931505507e11abdd6006c))
