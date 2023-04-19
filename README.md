@@ -7,7 +7,7 @@ da Alura.
 
 Esse repositório contêm a licença GPL-3.0, portanto não é permitido a
 utilização desse código em projetos fechados. Projetos com código aberto podem
-o utilizar com os devidos créditos. Para saber mais, [clique aqui](https://github.com/joaoiacillo/alura-7days-html-css/blob/main/LICENSE).
+o utilizar com os devidos créditos. Para saber mais, [clique aqui](blob/main/LICENSE).
 
 ## 🏃‍♂️ Progresso
 
