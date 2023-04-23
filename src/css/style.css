@@ -3,6 +3,11 @@
 /* || Common || */
 
 :root {
+  --brand-color: #3a404e;
+  --heading-color: black;
+  --text-color: #667085;
+  --accent-color: #8e2424;
+
   --container-width: 80rem;
 }
 
@@ -20,14 +25,8 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.container {
-  max-width: min(var(--container-width), 100vw);
-  margin: 0 auto;
-  padding: 16px 32px;
-}
-
 p {
-  color: #667085;
+  color: var(--text-color);
   font-size: 20px;
   line-height: 1.88rem;
   font-weight: 400;
@@ -40,19 +39,25 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #8e2424;
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: min(var(--container-width), 100vw);
+  margin: 0 auto;
+  padding: 16px 32px;
 }
 
 /* || Headings || */
 
 .generic-title {
-  color: #8E2424;
+  color: var(--accent-color);
   font-weight: 600;
 }
 
 h1 {
   margin: 0;
-  color: #3a404e;
+  color: var(--brand-color);
   font-size: 1.13rem;
 }
 
@@ -62,7 +67,6 @@ h2 {
   line-height: 3.75rem;
 }
 
-
 /* || Buttons || */
 
 .btn {
@@ -70,16 +74,15 @@ h2 {
   border: none;
   border-radius: 8px;
   color: white;
-  background: #8e2424;
+  background: var(--accent-color);
   font-family: inherit;
   font-size: 1rem;
   line-height: 1.5rem;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .btn:hover {
-  background-color: #7d1e1e;
   transform: scale(105%);
 }
 
@@ -92,14 +95,13 @@ h2 {
   background-color: #e6e6e6;
 }
 
-
 /* || Main Navbar || */
 
 .main-navbar .container {
   display: flex;
-  min-height: 80px;
   justify-content: space-between;
   align-items: center;
+  min-height: 80px;
 }
 
 .main-navbar .nav-container {
@@ -132,22 +134,26 @@ h2 {
   position: relative;
 }
 
+.main-navbar .nav-list a {
+  text-decoration: none;
+}
+
 .main-navbar .nav-list li::after {
   content: "";
   position: absolute;
-  top: -0.7rem;
+  bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
   height: 8px;
-  border: solid 2px #8e2424;
+  border: solid 2px var(--accent-color);
   border-radius: 100px;
   opacity: 0;
   transition: opacity 0.2s, width 0.2s;
 }
 
 .main-navbar .nav-list li:hover::after {
-  width: 16px;
+  width: 100%;
   opacity: 1;
 }
 
@@ -155,7 +161,6 @@ h2 {
   display: flex;
   gap: 12px;
 }
-
 
 /* || Main Header || */
 
@@ -198,7 +203,7 @@ h2 {
 
 .metric-number {
   margin-bottom: 4px;
-  color: #8E2424;
+  color: var(--accent-color);
   font-weight: 600;
   font-size: 60px;
   line-height: 4.5rem;
